@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Long read eksempel 1</title>
+</head>
+<body>
+    <section class="section__top">
+        <ul>
+            <li class="scroll" data-rate="2">pa</li>
+            <li>ral</li>
+            <li class="scroll" data-rate="-2">lax</li>
+        </ul>
+    </section>
+    <section class=""></section>
+
+    <script>
+        window.addEventListener('scroll', function(e){
+            const target = document.querySelectorAll('.scroll');
+            // console.log(target.style);
+
+            let index = 0, length = target.length;
+            for (index; index < length; index++) {
+                let pos = window.pageYOffset * target[index].dataset.rate;
+                target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
+
+            }
+        });
+
+
+
+    </script>
+</body>
+</html>

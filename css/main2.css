@@ -1,0 +1,93 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/06/10/22/58/composing-2391033_960_720.jpg");
+  }
+  
+  .bgimg-2 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/07/00/07/fantasy-2925250_960_720.jpg");
+    
+  }
+  
+  .bgimg-3 {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/13/14/15/fantasy-2847724_960_720.jpg");
+   
+  }
+  
+  .caption {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  .flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .alpha{
+      background: transparent;
+  }
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    text-align: center;
+  }
+  
+.boxed-text{
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+.dark-box{
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.alpha-box{
+    color:rgb(34, 33, 33);
+    background-color:transparent;
+    text-align:center;
+    padding:50px 80px;
+    text-align: justify;
+}
+.max{
+ min-height: 100%;
+}
+.large{
+    min-height: 700px;
+}
+.medium{
+    min-height: 400px;
+}
+
+.small{
+    min-height: 150px;
+}
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
